@@ -15,12 +15,12 @@ export default function PropertyCard({
   showSave?: boolean;
 }) {
   const router = useRouter();
-//   const { isSaved, saveLoading, toggleSave } = useSavedProperty(
-//     property.id,
-//     onUnsave
-//   );
+  const { isSaved, saveLoading, toggleSave } = useSavedProperty(
+    property.id,
+    onUnsave
+  );
 
-const isSaved = true;
+// const isSaved = true;
 
   return (
     <TouchableOpacity
@@ -88,8 +88,8 @@ const isSaved = true;
       {/* Save Button */}
       {/* {showSave && ()} */}
         <TouchableOpacity
-        //   onPress={toggleSave}
-        //   disabled={saveLoading}
+          onPress={toggleSave}
+          disabled={saveLoading}
           className="w-10 items-center pt-3"
         >
           <Ionicons
