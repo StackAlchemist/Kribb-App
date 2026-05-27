@@ -6,7 +6,7 @@ import { Tabs } from "expo-router"
 
  function AndroidTabs() {
 
-  const isAdmin = useUserStore((state)=>state,isAdmin)
+  const isAdmin = useUserStore((state)=>state.isAdmin)
 
   return (
     <Tabs screenOptions={{ headerShown: false}}>
